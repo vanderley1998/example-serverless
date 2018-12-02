@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.ler",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "restlercidade",
+    "direction" : "in",
+    "route" : "cidade",
+    "authLevel" : "function",
+    "methods" : [ "GET" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.criar",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "restcriarcidade",
+    "direction" : "in",
+    "route" : "cidade",
+    "authLevel" : "function",
+    "methods" : [ "POST" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

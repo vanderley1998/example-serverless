@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.alterar",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "restalterarcidade",
+    "direction" : "in",
+    "route" : "cidade",
+    "authLevel" : "function",
+    "methods" : [ "PUT" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

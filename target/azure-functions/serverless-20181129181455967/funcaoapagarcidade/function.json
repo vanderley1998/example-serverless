@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.apagar",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "restapagarcidade",
+    "direction" : "in",
+    "route" : "cidade/{id}",
+    "authLevel" : "function",
+    "methods" : [ "DELETE" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}
